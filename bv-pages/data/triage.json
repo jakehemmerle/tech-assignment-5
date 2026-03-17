@@ -1,0 +1,696 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-03-17T11:33:47.948778-05:00",
+    "phase2_ready": true,
+    "issue_count": 73,
+    "compute_time_ms": 0
+  },
+  "quick_ref": {
+    "open_count": 68,
+    "actionable_count": 12,
+    "blocked_count": 56,
+    "in_progress_count": 1,
+    "top_picks": []
+  },
+  "recommendations": [
+    {
+      "id": "p5-btl",
+      "title": "CHECKPOINT: M1.2 award-to-summary vertical slice",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.5487844168075037,
+      "breakdown": {
+        "pagerank": 0.22,
+        "betweenness": 0.2,
+        "blocker_ratio": 0.13,
+        "staleness": 0.0000025453082175925928,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.09625,
+        "urgency": 0.000010907273930393924,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 1,
+        "betweenness_norm": 1,
+        "blocker_ratio_norm": 1,
+        "staleness_norm": 0.000050906164351851854,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.9624999999999999,
+        "urgency_norm": 0.00010907273930393924,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 25), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p5-msg first to unblock this",
+      "reasons": [
+        "🔓 Unblocks 2 item(s): p5-429, p5-a2o",
+        "🔀 Critical path bottleneck (betweenness: 100%)",
+        "📊 High centrality in dependency graph (PageRank: 100%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p5-msg - complete that first"
+      ],
+      "unblocks_ids": [
+        "p5-429",
+        "p5-a2o"
+      ],
+      "blocked_by": [
+        "p5-msg"
+      ]
+    },
+    {
+      "id": "p5-msg",
+      "title": "M1.2.3 Wire points award and player summary routes",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.4494174114987526,
+      "breakdown": {
+        "pagerank": 0.20604316701924463,
+        "betweenness": 0.17986111111111114,
+        "blocker_ratio": 0.065,
+        "staleness": 0.0000025453082175925928,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.09625,
+        "urgency": 0.000010907273930393924,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.9365598500874756,
+        "betweenness_norm": 0.8993055555555556,
+        "blocker_ratio_norm": 0.5,
+        "staleness_norm": 0.000050906164351851854,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.9624999999999999,
+        "urgency_norm": 0.00010907273930393924,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 26), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p5-ek6 first to unblock this",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): p5-btl",
+        "🔀 Critical path bottleneck (betweenness: 90%)",
+        "📊 High centrality in dependency graph (PageRank: 94%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p5-ek6 - complete that first"
+      ],
+      "unblocks_ids": [
+        "p5-btl"
+      ],
+      "blocked_by": [
+        "p5-ek6"
+      ]
+    },
+    {
+      "id": "p5-ek6",
+      "title": "M1.2.2 Implement award service and persistence helpers",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.42604338315043344,
+      "breakdown": {
+        "pagerank": 0.1941794757279951,
+        "betweenness": 0.15833333333333333,
+        "blocker_ratio": 0.065,
+        "staleness": 0.0000025453082175925928,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.09625,
+        "urgency": 0.000010907273930393924,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.8826339805817959,
+        "betweenness_norm": 0.7916666666666666,
+        "blocker_ratio_norm": 0.5,
+        "staleness_norm": 0.000050906164351851854,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.9624999999999999,
+        "urgency_norm": 0.00010907273930393924,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 27), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p5-btm first to unblock this",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): p5-msg",
+        "🔀 Critical path bottleneck (betweenness: 79%)",
+        "📊 High centrality in dependency graph (PageRank: 88%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p5-btm - complete that first"
+      ],
+      "unblocks_ids": [
+        "p5-msg"
+      ],
+      "blocked_by": [
+        "p5-btm"
+      ]
+    },
+    {
+      "id": "p5-btm",
+      "title": "M1.2.1 Add failing award-flow tests",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.4029426577895422,
+      "breakdown": {
+        "pagerank": 0.18409510616481709,
+        "betweenness": 0.13541666666666669,
+        "blocker_ratio": 0.065,
+        "staleness": 0.0000025453082175925928,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.09625,
+        "urgency": 0.000010907273930393924,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.836795937112805,
+        "betweenness_norm": 0.6770833333333334,
+        "blocker_ratio_norm": 0.5,
+        "staleness_norm": 0.000050906164351851854,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.9624999999999999,
+        "urgency_norm": 0.00010907273930393924,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 28), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p5-xfh first to unblock this",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): p5-ek6",
+        "🔀 Critical path bottleneck (betweenness: 68%)",
+        "📊 High centrality in dependency graph (PageRank: 84%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p5-xfh - complete that first"
+      ],
+      "unblocks_ids": [
+        "p5-ek6"
+      ],
+      "blocked_by": [
+        "p5-xfh"
+      ]
+    },
+    {
+      "id": "p5-xfh",
+      "title": "CHECKPOINT: M1.1 foundation rules and contracts",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.37992863535542204,
+      "breakdown": {
+        "pagerank": 0.17552348681448668,
+        "betweenness": 0.11111111111111112,
+        "blocker_ratio": 0.065,
+        "staleness": 0.0000025453082175925928,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.09625,
+        "urgency": 0.000010907273930393924,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.7978340309749394,
+        "betweenness_norm": 0.5555555555555556,
+        "blocker_ratio_norm": 0.5,
+        "staleness_norm": 0.000050906164351851854,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.9624999999999999,
+        "urgency_norm": 0.00010907273930393924,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 29), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p5-don first to unblock this",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): p5-btm",
+        "🔀 Critical path bottleneck (betweenness: 56%)",
+        "📊 High centrality in dependency graph (PageRank: 80%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p5-don - complete that first"
+      ],
+      "unblocks_ids": [
+        "p5-btm"
+      ],
+      "blocked_by": [
+        "p5-don"
+      ]
+    },
+    {
+      "id": "p5-9cl",
+      "title": "CHECKPOINT: M1.6 dashboard integration",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.3763645788802072,
+      "breakdown": {
+        "pagerank": 0.09967821319857803,
+        "betweenness": 0.15972222222222224,
+        "blocker_ratio": 0.13,
+        "staleness": 0.000002506727970679012,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.09625,
+        "urgency": 0.000010741965810751042,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.4530827872662638,
+        "betweenness_norm": 0.7986111111111112,
+        "blocker_ratio_norm": 1,
+        "staleness_norm": 0.00005013455941358024,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.9624999999999999,
+        "urgency_norm": 0.00010741965810751042,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 17), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p5-3mj first to unblock this",
+      "reasons": [
+        "🔀 Critical path bottleneck (betweenness: 80%)",
+        "📊 High centrality in dependency graph (PageRank: 45%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p5-3mj - complete that first"
+      ],
+      "blocked_by": [
+        "p5-3mj"
+      ]
+    },
+    {
+      "id": "p5-9fu",
+      "title": "CHECKPOINT: M1.5 admin inspection and adjustment",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.3763645788802072,
+      "breakdown": {
+        "pagerank": 0.09967821319857803,
+        "betweenness": 0.15972222222222224,
+        "blocker_ratio": 0.13,
+        "staleness": 0.000002506727970679012,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.09625,
+        "urgency": 0.000010741965810751042,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.4530827872662638,
+        "betweenness_norm": 0.7986111111111112,
+        "blocker_ratio_norm": 1,
+        "staleness_norm": 0.00005013455941358024,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.9624999999999999,
+        "urgency_norm": 0.00010741965810751042,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 17), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p5-g9i first to unblock this",
+      "reasons": [
+        "🔀 Critical path bottleneck (betweenness: 80%)",
+        "📊 High centrality in dependency graph (PageRank: 45%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p5-g9i - complete that first"
+      ],
+      "blocked_by": [
+        "p5-g9i"
+      ]
+    },
+    {
+      "id": "p5-1j1",
+      "title": "CHECKPOINT: M1.3 progression and notifications",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.3757686837727444,
+      "breakdown": {
+        "pagerank": 0.11271572141826851,
+        "betweenness": 0.14583333333333334,
+        "blocker_ratio": 0.13,
+        "staleness": 0.000002526018094135803,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.09625,
+        "urgency": 0.000010824619938903935,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.5123441882648568,
+        "betweenness_norm": 0.7291666666666666,
+        "blocker_ratio_norm": 1,
+        "staleness_norm": 0.00005052036188271605,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.9624999999999999,
+        "urgency_norm": 0.00010824619938903934,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 21), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p5-do6 first to unblock this",
+      "reasons": [
+        "🔀 Critical path bottleneck (betweenness: 73%)",
+        "📊 High centrality in dependency graph (PageRank: 51%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p5-do6 - complete that first"
+      ],
+      "blocked_by": [
+        "p5-do6"
+      ]
+    },
+    {
+      "id": "p5-bj9",
+      "title": "CHECKPOINT: M1.4 history, timeline, and leaderboard reads",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.37576861241176823,
+      "breakdown": {
+        "pagerank": 0.11271572141826851,
+        "betweenness": 0.14583333333333334,
+        "blocker_ratio": 0.13,
+        "staleness": 0.000002506727970679012,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.09625,
+        "urgency": 0.000010741965810751042,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.5123441882648568,
+        "betweenness_norm": 0.7291666666666666,
+        "blocker_ratio_norm": 1,
+        "staleness_norm": 0.00005013455941358024,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.9624999999999999,
+        "urgency_norm": 0.00010741965810751042,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 21), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p5-chv first to unblock this",
+      "reasons": [
+        "🔀 Critical path bottleneck (betweenness: 73%)",
+        "📊 High centrality in dependency graph (PageRank: 51%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p5-chv - complete that first"
+      ],
+      "blocked_by": [
+        "p5-chv"
+      ]
+    },
+    {
+      "id": "p5-5rv",
+      "title": "M1.2: Points Award Vertical Slice",
+      "type": "epic",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.37422732338545167,
+      "breakdown": {
+        "pagerank": 0.12927059970568847,
+        "betweenness": 0.00625,
+        "blocker_ratio": 0.13,
+        "staleness": 0.0000025645983410493826,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.07525,
+        "urgency": 0.000010989927785221011,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.5875936350258567,
+        "betweenness_norm": 0.03125,
+        "blocker_ratio_norm": 1,
+        "staleness_norm": 0.00005129196682098765,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.7525,
+        "urgency_norm": 0.0001098992778522101,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 7), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p5-e3q first to unblock this",
+      "reasons": [
+        "🔓 Unblocks 2 item(s): p5-4g2, p5-cmt",
+        "📊 High centrality in dependency graph (PageRank: 59%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p5-e3q - complete that first"
+      ],
+      "unblocks_ids": [
+        "p5-4g2",
+        "p5-cmt"
+      ],
+      "blocked_by": [
+        "p5-e3q"
+      ]
+    }
+  ],
+  "quick_wins": [
+    {
+      "id": "p5-5rv",
+      "title": "M1.2: Points Award Vertical Slice",
+      "score": 0.6339850002884626,
+      "reason": "Unblocks 2 items",
+      "unblocks_ids": [
+        "p5-4g2",
+        "p5-cmt"
+      ]
+    },
+    {
+      "id": "p5-btl",
+      "title": "CHECKPOINT: M1.2 award-to-summary vertical slice",
+      "score": 0.6339850002884626,
+      "reason": "Unblocks 2 items",
+      "unblocks_ids": [
+        "p5-429",
+        "p5-a2o"
+      ]
+    },
+    {
+      "id": "p5-291",
+      "title": "Set up GitHub Pages with bv beads viewer",
+      "score": 0.5,
+      "reason": "Low complexity, high priority"
+    },
+    {
+      "id": "p5-3ws",
+      "title": "Set up GitHub Pages with bv beads viewer",
+      "score": 0.5,
+      "reason": "Low complexity, high priority"
+    },
+    {
+      "id": "p5-0l1",
+      "title": "M2: Strong",
+      "score": 0.4,
+      "reason": "Low complexity"
+    }
+  ],
+  "blockers_to_clear": [
+    {
+      "id": "p5-5rv",
+      "title": "M1.2: Points Award Vertical Slice",
+      "unblocks_count": 2,
+      "unblocks_ids": [
+        "p5-4g2",
+        "p5-cmt"
+      ],
+      "actionable": false,
+      "blocked_by": [
+        "p5-e3q"
+      ]
+    },
+    {
+      "id": "p5-btl",
+      "title": "CHECKPOINT: M1.2 award-to-summary vertical slice",
+      "unblocks_count": 2,
+      "unblocks_ids": [
+        "p5-429",
+        "p5-a2o"
+      ],
+      "actionable": false,
+      "blocked_by": [
+        "p5-msg"
+      ]
+    },
+    {
+      "id": "p5-0ns",
+      "title": "M2.1.3 Expose reset control and timeline reads",
+      "unblocks_count": 1,
+      "unblocks_ids": [
+        "p5-zto"
+      ],
+      "actionable": false,
+      "blocked_by": [
+        "p5-e7v"
+      ]
+    },
+    {
+      "id": "p5-1s4",
+      "title": "M2.2.1 Add failing strong UX state tests",
+      "unblocks_count": 1,
+      "unblocks_ids": [
+        "p5-r5z"
+      ],
+      "actionable": false,
+      "blocked_by": [
+        "p5-9cl",
+        "p5-zto"
+      ]
+    },
+    {
+      "id": "p5-1xw",
+      "title": "CHECKPOINT: M1 minimum-pass exit state",
+      "unblocks_count": 1,
+      "unblocks_ids": [
+        "p5-uwk"
+      ],
+      "actionable": false,
+      "blocked_by": [
+        "p5-l37"
+      ]
+    }
+  ],
+  "project_health": {
+    "counts": {
+      "total": 73,
+      "open": 68,
+      "closed": 5,
+      "blocked": 56,
+      "actionable": 12,
+      "by_status": {
+        "closed": 5,
+        "hooked": 1,
+        "in_progress": 1,
+        "open": 65,
+        "pinned": 1
+      },
+      "by_type": {
+        "agent": 4,
+        "epic": 21,
+        "task": 48
+      },
+      "by_priority": {
+        "1": 2,
+        "2": 71
+      }
+    },
+    "graph": {
+      "node_count": 73,
+      "edge_count": 68,
+      "density": 0.01293759512937595,
+      "has_cycles": false,
+      "phase2_ready": true
+    },
+    "velocity": {
+      "closed_last_7_days": 5,
+      "closed_last_30_days": 5,
+      "avg_days_to_close": 0.0012152777777777778,
+      "weekly": [
+        {
+          "week_start": "2026-03-16T00:00:00Z",
+          "closed": 5
+        },
+        {
+          "week_start": "2026-03-09T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-03-02T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-02-23T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-02-16T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-02-09T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-02-02T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-01-26T00:00:00Z",
+          "closed": 0
+        }
+      ]
+    }
+  },
+  "commands": {
+    "claim_top": "CI=1 br update p5-btl --status in_progress --json",
+    "show_top": "CI=1 br show p5-btl --json",
+    "list_ready": "CI=1 br ready --json",
+    "list_blocked": "CI=1 br blocked --json",
+    "refresh_triage": "bv --robot-triage"
+  }
+}

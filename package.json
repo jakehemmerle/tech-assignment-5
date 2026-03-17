@@ -10,6 +10,12 @@
     "stop": "docker compose down -v",
     "seed:rewards": "node scripts/seed-rewards.js",
     "seed:streaks": "node scripts/seed-streaks.js",
-    "simulate:hands": "node scripts/simulate-hands.js"
+    "simulate:hands": "node scripts/simulate-hands.js",
+    "test:e2e": "npx playwright test",
+    "test:e2e:headed": "npx playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "serve": "^14.2.6"
   }
 }
